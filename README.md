@@ -2,7 +2,7 @@
 
 This project was an attempt to find the best algorithm to "guess" the gender for a French noun. I've found that one of the trickiest things in learning French has been to remember the gender for all of the nouns. The only correct way to do it is to memorize them, but what happens if you want to use a word while you're speaking and can't remember its gender? Is there a way to guess more accurately than a coin toss?
 
-I pulled over 41k nouns from this [site](http://www.dicollecte.org/download.php?prj=fr) and then retrieved their genders from [le-dictionnaire](http://www.le-dictionnaire.com). I then guessed at classifying the nouns based on different pre-defined sets of rules and calculated how accurate my results were. Here are the results of the computation:
+I started from over 41k nouns in the [Dicollecte](http://www.dicollecte.org/download.php?prj=fr) French word list and looked up their genders on [le-dictionnaire](http://www.le-dictionnaire.com). I then guessed at classifying the nouns based on different pre-defined sets of rules and calculated how accurate my results were. Here are the results of the computation:
 
 ### Always masculine
 
@@ -70,3 +70,7 @@ Category | Percent correct | Raw
 Overall | 77.63% | 32079 / 41321
 Masculine | 70.06% | 16058 / 22919
 Feminine | 87.06% | 16021 / 18402
+
+## Data
+
+The word and gender lists are not included in this repository. To run the project, create `FrenchNounGenders/NounList.txt` with one noun per line, followed by a tab and its gender (`m` or `f`).
